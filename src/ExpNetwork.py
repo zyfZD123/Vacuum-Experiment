@@ -50,5 +50,6 @@ class MyDataset_notfromdisk(Dataset):
         if self.transform is not None:
             img = self.transform(img) 
         return img, label
+        
     def __len__(self):
         return len(self.imgs)
